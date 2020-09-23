@@ -39,8 +39,6 @@ stages:
     SignTypeSelection: ${{ parameters.SignTypeSelection }}
   jobs:
   - template: build.yml
-    parameters:
-      windowsPool: VSEng-MicroBuildVS2019
 
 - stage: symbol_archive
   displayName: Symbol archival
